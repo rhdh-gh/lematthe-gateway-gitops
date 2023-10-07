@@ -1,0 +1,15 @@
+app:
+  name: lematthe-poi-gateway-app
+  namespace: lematthe
+  cluster: .apps.rosa-x4jc7.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-gh/lematthe-gateway
+  org: rhdh-gh
+  name: lematthe-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: lematthe/poi-gateway-app
+  tag: latest
